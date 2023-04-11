@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>user home - Faster Tag</title>
+    <link rel="stylesheet" href="static/user_home_page.css">
+    <link rel="stylesheet" href="static/analytics_table.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+          <h1 class="website-name">Faster Tag - Spent Analytics</h1> 
+        </div>
+        <div class="navbar-items">
+          <a href={{url_for('home_page')}}>Profile</a>
+          <a class="active"  href={{url_for('spent_analytics')}}>Spent Analytics</a>
+          <a href={{url_for('add_money')}}>Add Money</a>
+          <a href={{url_for('logout')}}>Logout</a>
+        </div>
+      </div>
+      <section class="analytics main-content ">
+        <table>
+            <tr>
+              <th>Row ID</th>
+              <th>Entry</th>
+              <th>Exit</th>
+              <th>Distance Driven</th>
+              <th>Charges Paid</th>
+              <th>Entry Timestamp</th>
+              <th>Exit Timestamp</th>
+            </tr>
+            {% if result %}
+            <tr>
+              {% for item in result %}
+              <td class="row-id">{{item[0]}}</td>
+              <td>{{item[1]}}</td>
+              <td>{{item[2]}}</td>
+              <td>{{item[3]}} km</td>
+              <td>Rs. {{item[4]}}</td>
+              <td>{{item[5]}}</td>
+              <td>{{item[6]}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+          </table>
+      </section>
+  </body>
+</html>
+

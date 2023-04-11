@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>user home - Faster Tag</title>
+    <link rel="stylesheet" href="static/user_home_page.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+          <h1 class="website-name">Faster Tag - User Home</h1> 
+        </div>
+        <div class="navbar-items">
+          <a class="active" href={{url_for('home_page')}}>Profile</a>
+          <a href={{url_for('spent_analytics')}}>Spent Analytics</a>
+          <a href={{url_for('add_money')}}>Add Money</a>
+          <a href={{url_for('logout')}}>Logout</a>
+        </div>
+      </div>
+    <section class="main-content">
+        <div class="container">
+          {% if result %}
+            <div class="box profile">
+              <h2>User Profile</h2>
+              <p>Name: {{result[0]}}</p>
+              <p>Car: {{result[1]}}</p>
+              <p>Car number: {{result[2]}}</p>
+              <p>Years using the app: {{result[3]}}</p>
+            </div>
+            <div class="money">
+                <div class="box balance">
+                  <h3>Balance</h3>
+                  <p>Rs. {{result[4]}}</p>
+                </div>
+                <div class="box spending">
+                  <h3>Total Spent</h3>
+                  <p>Rs. {{result[5]}}</p>
+                </div>
+              </div>
+              {% endif %}
+        </div>
+        </section>
+  </body>
+</html>
+

@@ -1,0 +1,74 @@
+ /* Style for the login buttons */
+ .login-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px; /* Set the width of the button */
+    box-sizing: border-box; /* Include padding and border in the button's total width */
+  }
+
+  /* Style for the navbar */
+  .navbar {
+    background-color: #333; /* Dark gray background */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* Style for the navbar links */
+  .navbar a {
+    float: left;
+    color: #f2f2f2; /* White text */
+    text-align: center;
+    padding: 14px 16px; /* Add padding to the navbar links */
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Style for the active navbar link */
+  .active {
+    background-color: #4CAF50; /* Green background */
+  }
+
+  /* Style for the main content section */
+  .main-content {
+    margin-top: 80px; /* Add a margin to the top of the main content section to account for the navbar height */
+    padding: 50px; /* Add padding to the main content section */
+    /* background-color: #f2f2f2; Add a light gray background color to the main content section */
+    text-align: center;
+  }
+
+  /* Style for the main content heading */
+  .main-content-heading {
+    font-size: 24px;
+    margin-bottom: 30px; /* Add a margin to the bottom of the main content heading */
+  }
+
+  /* Style for the main content paragraph */
+  .main-content-paragraph {
+    font-size: 16px;
+    line-height: 1.5; /* Add line-height to the main content paragraph for readability */
+    margin-bottom: 30px; /* Add a margin to the bottom of the main content paragraph */
+  }
+  .website-name{
+    text-align: center;
+    color: white;
+  }
+  .logo{
+    border-bottom: solid 2px black;
+  }
+  .navbar-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }

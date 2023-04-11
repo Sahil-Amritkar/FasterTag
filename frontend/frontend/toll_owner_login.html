@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Toll Owner Login - Faster Tag</title>
+    <style>
+      /* Style for the accent color */
+      :root {
+        --accent-color: #4CAF50;
+      }
+      
+      /* Style for the form container */
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Style for the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style for the form heading */
+      h1 {
+        margin-bottom: 40px;
+        /* color: var(--accent-color); */
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      /* Style for the form input fields */
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #CCCCCC;
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      /* Style for the form button */
+      button[type="submit"] {
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        width: 300px;
+      }
+
+      /* Style for the form button on hover */
+      button[type="submit"]:hover {
+        background-color: #3E8E41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h1>Toll Owner Login</h1>
+        <input type="text" placeholder="Email" >
+        <input type="password" placeholder="Password" >
+        <a href=""> 
+            <button type="submit">Login</button>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

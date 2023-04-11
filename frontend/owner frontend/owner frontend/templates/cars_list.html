@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Owner home - Faster Tag</title>
+    <link rel="stylesheet" href="static/user_home_page.css">
+    <link rel="stylesheet" href="static/analytics_table.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+          <h1 class="website-name">Faster Tag - Cars On Property</h1> 
+        </div>
+        <div class="navbar-items">
+            <a href={{url_for('owner_home_page')}}>Profile</a>
+            <a class="active" href={{url_for('cars_list')}}>Cars List</a>
+            <a href={{url_for('owner_analytics')}}>Analytics</a>
+            <a href={{url_for('logout')}}>Logout</a>
+        </div>
+      </div>
+      <section class="analytics main-content ">
+        <table>
+            <tr>
+              <th>Row ID</th>
+              <th>Car Number</th>
+              <th>Entry Gate</th>
+              <th>Entry Timestamp</th>
+              <th>Exit Gate</th>
+              <th>Exit Timestamp</th>
+            </tr>
+            {% if result %}
+            <tr>
+              {% for item in result %}
+              <td class="row-id">{{item[0]}}</td>
+              <td>{{item[1]}}</td>
+              <td>{{item[2]}}</td>
+              <td>{{item[3]}}</td>
+              <td>{{item[4]}}</td>
+              <td>{{item[5]}}</td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+          </table>
+      </section>
+  </body>
+</html>
+

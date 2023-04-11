@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>user home - Faster Tag</title>
+    <link rel="stylesheet" href="static/user_home_page.css">
+    <link rel="stylesheet" href="static/add_money.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+          <h1 class="website-name">Faster Tag - Add Money</h1> 
+        </div>
+        <div class="navbar-items">
+          <a  href="user_home_page.html">Profile</a>
+          <a href="user_spent_analytics.html">Spent Analytics</a>
+          <a class="active" href="user_add_money.html">Add Money</a>
+        </div>
+      </div>
+    <section>
+        <form>
+            <div class="form-items">
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" placeholder="Enter amount">      
+                <label for="card-type">Card Type:</label>
+                <select id="card-type" name="card-type">
+                  <option value="visa">Visa</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="amex">American Express</option>
+                </select>
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter card number">
+                <label for="card-holder-name">Card Holder Name:</label>
+                <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Enter card holder name">
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM / YY">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+            </div>
+            <input type="submit" value="Add Money">
+          </form>
+        </section>
+  </body>
+</html>
+

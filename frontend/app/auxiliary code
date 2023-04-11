@@ -1,0 +1,80 @@
+
+
+
+# firebase = pyrebase.initialize_app(config)
+# auth = firebase.auth()
+# db = firebase.database()
+# data = {"name":"hritik",'car':'Toyota Camry','car_num':'H982FKL','Years':'2','balance':'250.00','total':'1500.00'}
+# db.child("User").child("hritik@gmail.com").set(data) 
+
+
+# response.headers['Cache-Control'] = 'no-cache'
+
+
+# Dummy user database
+# users = {
+#     "user1": "password1",
+#     "user2": "password2",
+#     "user3": "password3"
+# }
+
+
+
+
+    # print(doc.id)
+            # res1 = doc.collection("timestamps").document("ABC").get().to_dict()
+            # print(res1)
+        # ids = []
+        # for doc in docs:
+        #     print(doc.id)
+        #     ids.append(doc.id)
+        # print(ids)
+            # if(dict2["Location"]==location):
+            #     count = str(i)
+            #     d = dict2['Date'] +" "+ dict2['Time']
+            #     l = [count,dict2['N_plate'],dict2['Location'],d]
+            #     if "Exit_Time" in dict2:
+            #         l.append(dict2["Exit_Time"]+" "+dict2["Exit_Date"])
+            #     else:
+            #         l.append("-")
+            #     result.append(l)
+            #     i=i+1
+
+
+
+    # Render a success page
+
+# start time and end time
+                    # if(cost_param == "Parking"):
+                    #     start_time = datetime.strptime(dict2['Exit_Timestamp'], "%Y-%m-%d %H:%M:%S.%f")
+                    #     end_time = datetime.strptime(dict2['Entry_Timestamp'], "%Y-%m-%d %H:%M:%S.%f")
+                    #     # get difference
+                    #     delta = end_time - start_time
+                    #     sec = delta.total_seconds()3
+                    #     print('difference in seconds:', sec)
+                    #     min = sec / 60
+                    #     print('difference in minutes:', min)
+                    #     # get difference in hours
+                    #     hours = sec / (60 * 60)
+                    #     print('difference in hours:', hours)
+                    #     charged = 10*hours
+                    #     res2 = db.collection("property").document(location).collection("Cars").document(i).collection("timestamps").document(dict2['Entry_Timestamp']).set({'charged':charged},merge = True)
+                    #     db.collection("property").document(location).update({"Charge":firestore.Increment(charged)})
+                    
+                    # elif(cost_param == "Campus"):
+                    #     charged = 0
+                    #     res2 = db.collection("property").document(location).collection("Cars").document(i).collection("timestamps").document(dict2['Entry_Timestamp']).set({'charged':charged},merge = True)
+                    #     db.collection("property").document(location).update({"Charge":firestore.Increment(charged)})
+                    # elif(cost_param == "Highway"):
+                    #     charged = 50
+                    #     res2 = db.collection("property").document(location).collection("Cars").document(i).collection("timestamps").document(dict2['Entry_Timestamp']).set({'charged':charged},merge = True)
+                    #     db.collection("property").document(location).update({"Charge":firestore.Increment(charged)})
+
+
+
+        # if(cost_param == "highway"):
+        #     cost = 50
+        # elif(cost_param == "campus"):
+        #     cost = 0
+        # elif(cost_param == "parking"):
+        #     cost = 10

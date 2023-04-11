@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Property owner - Faster Tag</title>
+    <link rel="stylesheet" href="static/user_home_page.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+          <h1 class="website-name">Faster Tag - Property Owner Home</h1> 
+        </div>
+        <div class="navbar-items">
+          <a class="active" href={{url_for('owner_home_page')}}>Profile</a>
+          <a href={{url_for('cars_list')}}>Cars List</a>
+          <a href={{url_for('owner_analytics')}}>Analytics</a>
+          <a href={{url_for('logout')}}>Logout</a>
+        </div>
+      </div>
+    <section class="main-content">
+        <div class="container">
+          {% if result %}
+            <div class="box profile">
+              <h2>Property Details</h2>
+              <p>Name: {{result[0]}}</p>
+              <p>Exit Points: {{result[1]}} </p>
+              <p>Entry Points: {{result[2]}}</p>
+              <p>Years using the app: {{result[3]}}</p>
+            </div>
+            <div class="money">
+                <div class="box balance">
+                  <h3>Charges Collected Today</h3>
+                  <p>Rs. {{result[4]}}</p>
+                </div>
+                <div class="box spending">
+                  <h3>Total Cars</h3>
+                  <p>{{result[5]}} cars</p>
+                </div>
+              </div>
+              {% endif %}
+        </div>
+        </section>
+  </body>
+</html>
+

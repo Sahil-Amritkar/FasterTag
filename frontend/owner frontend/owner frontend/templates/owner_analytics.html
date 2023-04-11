@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Property owner - Faster Tag</title>
+    <link rel="stylesheet" href="static/user_home_page.css">
+    <style>
+        .images{
+            margin: 10px;
+            max-width: 800px;
+        }
+        .analytics{
+            /* padding: 20px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+          <h1 class="website-name">Faster Tag - Analytics</h1> 
+        </div>
+        <div class="navbar-items">
+          <a href={{url_for('owner_home_page')}}>Profile</a>
+          <a href={{url_for('cars_list')}}>Cars List</a>
+          <a class="active" href={{url_for('owner_analytics')}}>Analytics</a>
+          <a href={{url_for('logout')}}>Logout</a>
+        </div>
+      </div>
+    <section class="main-content">
+        <div class="analytics">
+            <div class="images">
+                <img src="../static/images/images/daily_activity.jpg" alt="Daily activity">
+            </div>
+            <div class="images">
+                <img src="../static/images/images/monthly_activity.jpg" alt="Monthly activity">
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
+
